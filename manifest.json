@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "ImportYeti Filter Tool(HS CODE)",
+  "version": "1.1",
+  "description": "用于ImportYeti网站HS CODE中通过自定义关键词查询Suppliers And Companies的插件",
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.importyeti.com/hs-codes/*"],
+      "js": ["panel.js"]
+    }
+  ]
+}
